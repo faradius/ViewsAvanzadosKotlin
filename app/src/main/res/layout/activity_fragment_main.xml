@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImplementacionFragments_1.ActivityFragmentMain">
+
+
+    <!--Fragment Mediante Codigo-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentUnoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Fragment Mediante Diseño, si esto no esta habilitado crashea la version landscape-->
+    <!--<fragment
+        android:id="@+id/fragmentoUno"
+        android:name="com.example.viewsavanzadoskotlin.ImplementacionFragments_1.FragmentUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_uno" />-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.viewsavanzadoskotlin.ImplementacionFragments_1.FragmentDos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_dos"/>
+</LinearLayout>
