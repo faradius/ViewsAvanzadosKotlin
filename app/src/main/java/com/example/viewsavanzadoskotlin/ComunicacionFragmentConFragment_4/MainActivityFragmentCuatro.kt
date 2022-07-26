@@ -33,17 +33,19 @@ class MainActivityFragmentCuatro : AppCompatActivity(), InterfaceComunicacion {
     }
 
 
-    //Esta es la parte final de la logica de envio de datos, tercera parte (3°)
+    /*Esta es la parte final de la logica de envio de datos, tercera parte (3°)
     //implementamos la interface dentro de la clase MainActivityFragmentCuatro y sobre escribimos sus metodos
-    //con esto ya se implementa la interfaz de forma correcta
+    //con esto ya se implementa la interfaz de forma correcta*/
 
     //La funcion EnvioDatos ya tiene un dato dentro de su parametro que viene desde el FragmentoA, por lo que vamos a utilizar ese dato obtenido desde el activity
     override fun EnvioDatos(dato: String) {
-        //Primero declaramos una variable de tipo FragmentoEjemploB que tendrá asignado el fragmentMananger, este hará una busqueda por medio del Tag
-        //para asi saber a que fragment nos estamos refiriendo, en este caso es el fragmentB, despues se realiza un cast para hacer referencia que es el FragmentEjemploB
+
+        /*Primero declaramos una variable de tipo FragmentoEjemploB que tendrá asignado el fragmentMananger, este hará una busqueda por medio del Tag
+        //para asi saber a que fragment nos estamos refiriendo, en este caso es el fragmentB, despues se realiza un cast para hacer referencia que es el FragmentEjemploB */
         var fragmentB:FragmentEjemploB = supportFragmentManager.findFragmentByTag("fragmentB") as FragmentEjemploB
-        //Al realizar el cast nos permitira visualizar los metodos que contiene el fragmentoB
-        //por lo tanto hacemos uso del metodo datoRecibido y le enviamos al segundo fragment el valor caputurado desde la interfaz
+
+        /*Al realizar el cast nos permitira visualizar los metodos que contiene el fragmentoB
+        //por lo tanto hacemos uso del metodo datoRecibido y le enviamos al segundo fragment el valor caputurado desde la interfaz */
         fragmentB.datoRecibido(dato)
     }
 }

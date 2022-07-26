@@ -20,10 +20,10 @@ class ActivityDos : AppCompatActivity() {
 
         //Se crea una variable para que almacene los datos que son enviados desde el otro activity por medio del intent
         var bundle_datos = intent.extras
-        //Se crea una variable en el cual se almacenará el dato que queramos recuperar
+        /*Se crea una variable en el cual se almacenará el dato que queramos recuperar
         //El bundle o intent puede que lleguen datos nulos y se obtiene cada uno de los valores por medio del name o nombre
         //que se declaro anteriormente como referencia de cada dato que se iba enviar desde el otro activity y es necesario poner el mismo
-        //nombre como se referencio en el activity anterior por que si no, no se podra recibir el dato
+        //nombre como se referencio en el activity anterior por que si no, no se podra recibir el dato */
         var datoEscuela = bundle_datos?.getString(EXTRA_INTENT_ESCUELA)
         var datoNombre = bundle_datos?.getString(EXTRA_INTENT_NOMBRE)
         var datoDireccion = bundle_datos?.getString(EXTRA_INTENT_DIRECCION)

@@ -8,9 +8,9 @@ import com.example.viewsavanzadoskotlin.R
 
 //Implementamos la interface que creamos y añadimos los metodos correspondientes
 class MainActivityFragmentTres : AppCompatActivity(), InterfaceFragment {
-    //Se declaran las variables desde la clase, es necesario poner el lateinit por que si no marca error
+    /*Se declaran las variables desde la clase, es necesario poner el lateinit por que si no marca error
     //no se puede declarar la variable como en java, al hacer uso de lateinit estamos dandole mayor seguridad
-    //al codigo, es decir que se van a inicializar despues y que por el momento solo se declaran la variables
+    //al codigo, es decir que se van a inicializar despues y que por el momento solo se declaran la variables*/
 
     //Las variables que se declaran es la del administrador de fragments y el textview
      private lateinit var fragmentManager:FragmentManager
@@ -37,8 +37,8 @@ class MainActivityFragmentTres : AppCompatActivity(), InterfaceFragment {
 
      }
 
-    //Al implementar la interface en la clase se implementa al mismo tiempo esta función para hacer uso de ella
-    //En esta función recibe un dato de tipo string desde el fragment
+    /*Al implementar la interface en la clase se implementa al mismo tiempo esta función para hacer uso de ella
+    //En esta función recibe un dato de tipo string desde el fragment */
     override fun sendData(dato: String) {
         //Ese dato cachado se le colocará en el TextView
         tvText.setText(dato)

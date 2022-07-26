@@ -18,12 +18,12 @@ class ActivityFragmentMain : AppCompatActivity() {
         //Aqui estamos definiendo un administrador de fragmentos para administrar los fragmentos dentro del activity
         val fragmentManager = supportFragmentManager
 
-        //Aqui hacemos referencia a las trasancciones con los fragments, es decir aqui definimos que es lo que queremos que haga el fragment
-        //por ejemplo: añadir un fragment, eleminarlo, remplazarlo, mover, etc.
+        /*Aqui hacemos referencia a las trasancciones con los fragments, es decir aqui definimos que es lo que queremos que haga el fragment
+        //por ejemplo: añadir un fragment, eleminarlo, remplazarlo, mover, etc. */
         val fragmentTrasaction = fragmentManager.beginTransaction()
 
-        //Aqui definimos el tipo de trasaccion que vamos hacer con el fragmento es decir que se agregará un fragmento
-        //para ello le debemos poner un id al xml para poder hacer referencia hacia donde lo vamos a colocar y que fragmento vamos a colocar
+        /*Aqui definimos el tipo de trasaccion que vamos hacer con el fragmento es decir que se agregará un fragmento
+        //para ello le debemos poner un id al xml para poder hacer referencia hacia donde lo vamos a colocar y que fragmento vamos a colocar*/
         fragmentTrasaction.add(R.id.fragmentUnoView,fragmentoUno)
 
         //con esta instruccion hacemos que se ejecute la trasaccion, si esto no esta simplemente no hará nada

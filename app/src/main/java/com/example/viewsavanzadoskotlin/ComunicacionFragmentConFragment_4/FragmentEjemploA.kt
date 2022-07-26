@@ -23,11 +23,13 @@ class FragmentEjemploA : Fragment() {
 
         //Se manda a llamar el evento click
         btnSend.setOnClickListener {
+
             //como primer paso es necesario llamar la interfaz que vamos a utilizar para poderle pasar el dato al activity desde este fragment
             val comunicador: InterfaceComunicacion = activity as InterfaceComunicacion
-            //Una vez declarado la interfaz nos permitirá hacer uso del metodo que contenia la interfaz que se llama EnvioDatos
+
+            /*Una vez declarado la interfaz nos permitirá hacer uso del metodo que contenia la interfaz que se llama EnvioDatos
             //en el metodo se espera un valor de tipo string como parametro, ahi le vamos a pasar lo que contenga dentro del editText
-            //y ese valor lo castemos para que sea string y se lo enviamos al activity ya que despues el activity se lo va a pasar el fragmentB
+            //y ese valor lo castemos para que sea string y se lo enviamos al activity ya que despues el activity se lo va a pasar el fragmentB*/
             comunicador.EnvioDatos(etMensajeFA.text.toString())
 
         }

@@ -17,8 +17,8 @@ class FragmentEjemploDos : Fragment(){
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-            //Mandamos a llamar la interface para poder comunicar el fragment con el activity
-            //activity es el getContext() en java y el as hace referencia a un casteo o conversion de tipo Interface
+            /*Mandamos a llamar la interface para poder comunicar el fragment con el activity
+            //activity es el getContext() en java y el as hace referencia a un casteo o conversion de tipo Interface*/
             val comunicador:InterfaceFragment = activity as InterfaceFragment
 
             val view:View = inflater.inflate(R.layout.fragment_ejemplo_dos, container, false)

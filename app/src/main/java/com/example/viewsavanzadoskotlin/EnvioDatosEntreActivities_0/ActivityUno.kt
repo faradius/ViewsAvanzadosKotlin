@@ -49,12 +49,12 @@ class ActivityUno : AppCompatActivity() {
 
         //Este boton envia los datos hacia al otro activity
         btnEnviar.setOnClickListener {
-            //Se crea una variable de tipo intent, en los parametros se define primero la actividad en la que nos encontramos
-            //en el segundo parametro se define la actividad que deseamos pasarnos en este caso es el ActivityDos
+            /*Se crea una variable de tipo intent, en los parametros se define primero la actividad en la que nos encontramos
+            //en el segundo parametro se define la actividad que deseamos pasarnos en este caso es el ActivityDos */
             val intent = Intent(this,ActivityDos::class.java)
-            //por medio del intent se van a pasar los datos por medio del metodo putExtra
+            /*por medio del intent se van a pasar los datos por medio del metodo putExtra
             //el metodo nos pide dos valores uno hace referencia al nombre que le pondremos al intent y el otro parametro hace
-            //referencia al valor, puede ser entero, cadena, decimal, booleano, etc.
+            //referencia al valor, puede ser entero, cadena, decimal, booleano, etc.*/
             intent.putExtra(EXTRA_INTENT_ESCUELA,etEscuela.text.toString())
             intent.putExtra(EXTRA_INTENT_NOMBRE, etNombre.text.toString())
             intent.putExtra(EXTRA_INTENT_DIRECCION, etDireccion.text.toString())

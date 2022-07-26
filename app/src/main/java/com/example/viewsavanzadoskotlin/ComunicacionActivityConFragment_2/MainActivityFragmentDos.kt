@@ -30,9 +30,9 @@ class MainActivityFragmentDos : AppCompatActivity() {
             var number = 10
             //Se define un bundle para poder enviar los datos al fragment desde el activity
             var bundle = bundleOf()
-            //En el bundle se pueden enviar cualquier tipo de datos pero se debe especificar en este caso es un string y un entero
+            /*En el bundle se pueden enviar cualquier tipo de datos pero se debe especificar en este caso es un string y un entero
             //El metodo putString y putInt significa que vamoos a colocar los valores dentro del bundle y dentro del parentesis nos piden
-            //dos parametros uno hace referencia a la key que es el indentificador que tiene el bundle y la otra es el dato que queremos enviar al fragment
+            //dos parametros uno hace referencia a la key que es el indentificador que tiene el bundle y la otra es el dato que queremos enviar al fragment */
             bundle.putString("DATOS",inf)
             bundle.putInt("NUMERO", number)
 
