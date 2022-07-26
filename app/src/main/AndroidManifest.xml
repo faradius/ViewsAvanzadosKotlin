@@ -14,8 +14,26 @@
         android:theme="@style/Theme.ViewsAvanzadosKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".ComunicacionActivityConFragment_2.MainActivityFragmentDos"
+            android:name=".ComunicacionFragmentConFragment_4.MainActivityFragmentCuatro"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ComunicacionFragmentConActivity_3.MainActivityFragmentTres"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ComunicacionActivityConFragment_2.MainActivityFragmentDos"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,10 +50,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EnvioDatosEntreActivities.ActivityDos"
+            android:name=".EnvioDatosEntreActivities_0.ActivityDos"
             android:exported="false" />
         <activity
-            android:name=".EnvioDatosEntreActivities.ActivityUno"
+            android:name=".EnvioDatosEntreActivities_0.ActivityUno"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

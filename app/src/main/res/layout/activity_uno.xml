@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EnvioDatosEntreActivities.ActivityUno" >
+    tools:context=".EnvioDatosEntreActivities_0.ActivityUno" >
 
     <EditText
         android:id="@+id/etEscuela"

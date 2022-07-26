@@ -1,4 +1,4 @@
-package com.example.viewsavanzadoskotlin.EnvioDatosEntreActivities
+package com.example.viewsavanzadoskotlin.EnvioDatosEntreActivities_0
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import com.example.viewsavanzadoskotlin.R
 
 const val EXTRA_INTENT_ESCUELA = "ESCUELA"
