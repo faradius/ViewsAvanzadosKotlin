@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.viewsavanzadoskotlin">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewsAvanzadosKotlin"
         tools:targetApi="31">
+        <activity
+            android:name=".RecyclerViewCustomE1_8.MainActivitySeriesDetail"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewCustomE1_8.MainActivityRVCustomE1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ListViewCustomE2_7.ActivityUserDetail"
             android:exported="false" />
