@@ -27,5 +27,4 @@ class FragmentEjemploB : Fragment() {
             //Una vez que nos llegue el dato en la variable info se lo colocamos al textView
             tvMensajeFB.setText("Recibimos el dato: $info")
         }
-
 }
