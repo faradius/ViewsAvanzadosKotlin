@@ -16,8 +16,27 @@
         android:theme="@style/Theme.ViewsAvanzadosKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".FragmentsConNavigationGraph_4_3.FragActivityMain"
+            android:exported="true">
+            <nav-graph android:value="@navigation/product_graph"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PasarDatosFragments_4_2.FragmentMainDatos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".NavegacionFragments_4_1.FragmentActivityMain"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

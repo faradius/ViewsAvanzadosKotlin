@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragGraphA">
+
+    <fragment
+        android:id="@+id/fragGraphA"
+        android:name="com.example.viewsavanzadoskotlin.FragmentsConNavigationGraph_4_3.FragGraphA"
+        android:label="fragment_frag_graph_a"
+        tools:layout="@layout/fragment_frag_graph_a" >
+        <action
+            android:id="@+id/action_fragGraphA_to_fragGraphB"
+            app:destination="@id/fragGraphB"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragGraphB"
+        android:name="com.example.viewsavanzadoskotlin.FragmentsConNavigationGraph_4_3.FragGraphB"
+        android:label="fragment_frag_graph_b"
+        tools:layout="@layout/fragment_frag_graph_b" >
+        <argument
+            android:name="nombrePersona"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="No_Name" />
+        <argument
+            android:name="edadPersona"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <include app:graph="@navigation/product_graph" />
+</navigation>
